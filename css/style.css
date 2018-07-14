@@ -200,12 +200,23 @@ header
 {
     display:grid;
     grid-template-columns:33.33% 33.33% 33.33%;
-    color:green;
+    color:#02B30A;
 }
 
 #decals-section-images div img
 {
     margin:auto;
+}
+
+#satisfied-customers p
+{
+    text-align:center;
+    font-style:italic;
+}
+
+#satisfied-customers p:before, #satisfied-customers p:after 
+{
+    content: '"';
 }
 
 #smoke1 
@@ -234,4 +245,9 @@ header
 {
     width:80%;
     margin-left:10%;
+}
+
+.block
+{
+    margin-bottom:50px;
 }
