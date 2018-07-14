@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+	  	<meta charset="utf-8">
+
+	  	<title>Kamikaze Custome</title>
+
+	  	<meta name="description" content="">
+	  	<meta name="author" content="">
+
+		<link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet"> 
+	  	<link rel="stylesheet" href="css/style.css">
+	
+	  	<!--[if lt IE 9]>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	  	<![endif]-->
+
+	  	<script src="js/jquery-3.3.1.min.js"></script>
+	</head>
+
+	<body>
+  		<header>
+  			<section id="header-left">
+  				<img src="img/logo.jpg">
+  			</section>
+  			<section id="header-right">
+				<nav>
+					<ul>
+						<li><a href="file:///C:/Users/Admin/Desktop/KAMIKAZE/NORMAL%20MENU/index.html">HOME</a></li>
+						<li><a href="file:///C:/Users/Admin/Desktop/KAMIKAZE/NORMAL%20MENU/index.html">HYDRO GRAPHICS</a></li>
+						<li><a href="file:///C:/Users/Admin/Desktop/KAMIKAZE/NORMAL%20MENU/index.html">PATTERNS</a></li>
+						<li><a href="file:///C:/Users/Admin/Desktop/KAMIKAZE/NORMAL%20MENU/index.html">PHOTO GALLERY</a></li>
+						<li><a href="file:///C:/Users/Admin/Desktop/KAMIKAZE/NORMAL%20MENU/index.html">PRICING</a></li>
+						<li><a href="file:///C:/Users/Admin/Desktop/KAMIKAZE/NORMAL%20MENU/index.html">CONTACT US</a></li>
+						<li><a href="file:///C:/Users/Admin/Desktop/KAMIKAZE/NORMAL%20MENU/index.html">FRANÇAIS</a></li>
+					</ul>
+				</nav>
+  			</section>
+  		</header>
+
+  		<main>
+  			<section id="home-section">
+  				<section id="home-section-left">
+  					<div>MAKE YOUR RIDE THE TALK OF THE TOWN</div>
+  				</section>
+	  			<section id="home-section-right">
+	  				<!--<img id="main-image" src="img/CRW_complete1-2.png">-->
+	  				<!--<img id="main-image" src="img/bikes-blue.png">-->
+	  				<img id="main-image" src="img/green.png">
+	  			</section>
+  			</section>
+  		</main>
+
+<div id="smoke1"></div>
+<div id="smoke2"></div>
+
+<script type="text/javascript">
+var x1 = 0;
+var x2 = 0;
+
+setInterval(function(){ setBackgroundImages() }, 10);
+
+function setBackgroundImages()
+{
+	x1++;
+	x2 = x2 + 2;
+
+	if (x1 == 1600)
+		x1 = 0;
+
+	$('#smoke1').css('background-position-x', x1);
+
+	if (x2 == 1600)
+		x2 = 0;
+
+	$('#smoke2').css('background-position-x', x2);	
+
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	var margintop = ($('#home-section-right').height() - $('#main-image').height()) / 2;
+	var marginleft = ($('#home-section-right').width() - $('#main-image').width()) / 2;
+	$('#main-image').css('margin-top', margintop + 'px');
+	$('#main-image').css('margin-left', marginleft + 'px');
+});
+</script>
+
+  		<footer>FOOTER</footer>
+	</body>
+</html>
